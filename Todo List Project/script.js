@@ -89,3 +89,65 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector('.todo-items').addEventListener('')
 });
+
+
+// Another Code 
+document.addEventListener("DOMContentLoaded", () => {
+//   const todoInput = document.getElementById("todo-input");
+//   const addTaskBtn = document.getElementById("add-task-btn");
+//   const todoList = document.getElementById("todo-list");
+
+//   // localStorage.clear();
+//   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+//   for (const task of tasks) {
+//     renderTask(task);
+//   }
+
+//   addTaskBtn.addEventListener("click", () => {
+//     const taskText = todoInput.value.trim();
+
+//     if (taskText === "") return;
+
+//     const newtask = {
+//       id: Date.now(),
+//       text: taskText,
+//       completed: false,
+//     };
+//     tasks.push(newtask);
+//     saveTasks();
+//     renderTask(newtask);
+//     todoInput.value = "";
+//   });
+
+//   function renderTask(task) {
+//     const li = document.createElement("li");
+//     li.classList.add("todo-item");
+//     if (task.completed) li.classList.add("completed");
+//     task.completed = !task.completed;
+//     li.innerHTML = `
+//       ${task.text}
+//       <span class="todo-item-actions">
+//         <button>Delete</button>
+//       </span>
+//     `;
+
+//     li.addEventListener("dblclick", (e) => {
+//       if (e.target.tagName !== "BUTTON") {
+//         li.classList.toggle("completed");
+//       }
+//     });
+
+//     li.querySelector("button").addEventListener("click", () => {
+//       tasks = tasks.filter((t) => t.id !== task.id);
+//       saveTasks();
+//       li.remove();
+//     });
+
+//     todoList.appendChild(li);
+//   }
+
+//   function saveTasks() {
+//     localStorage.setItem("tasks", JSON.stringify(tasks));
+//   }
+// });
